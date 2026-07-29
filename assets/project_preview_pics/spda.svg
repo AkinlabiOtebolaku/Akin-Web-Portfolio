@@ -1,0 +1,219 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 1600 900"
+>
+    <defs>
+        <linearGradient
+            id="background"
+            x1="0"
+            y1="0"
+            x2="1"
+            y2="1"
+        >
+            <stop offset="0%" stop-color="#050816"/>
+            <stop offset="100%" stop-color="#10244a"/>
+        </linearGradient>
+
+        <pattern
+            id="grid"
+            width="60"
+            height="60"
+            patternUnits="userSpaceOnUse"
+        >
+            <path
+                d="M 60 0 L 0 0 0 60"
+                fill="none"
+                stroke="#62d9ff"
+                stroke-opacity="0.08"
+                stroke-width="2"
+            />
+        </pattern>
+
+        <filter id="glow">
+            <feGaussianBlur
+                stdDeviation="8"
+                result="blur"
+            />
+
+            <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+
+    <rect
+        width="1600"
+        height="900"
+        fill="url(#background)"
+    />
+
+    <rect
+        width="1600"
+        height="900"
+        fill="url(#grid)"
+    />
+
+    <!-- Football pitch -->
+
+    <g
+        fill="none"
+        stroke="#62d9ff"
+        stroke-opacity="0.55"
+        stroke-width="5"
+    >
+        <rect
+            x="720"
+            y="110"
+            width="720"
+            height="680"
+            rx="10"
+        />
+
+        <line
+            x1="1080"
+            y1="110"
+            x2="1080"
+            y2="790"
+        />
+
+        <circle
+            cx="1080"
+            cy="450"
+            r="105"
+        />
+
+        <circle
+            cx="1080"
+            cy="450"
+            r="8"
+            fill="#62d9ff"
+        />
+
+        <rect
+            x="720"
+            y="280"
+            width="150"
+            height="340"
+        />
+
+        <rect
+            x="1290"
+            y="280"
+            width="150"
+            height="340"
+        />
+    </g>
+
+    <!-- Data graph -->
+
+    <polyline
+        points="
+            770,650
+            850,590
+            930,620
+            1010,500
+            1090,530
+            1170,390
+            1250,430
+            1350,260
+        "
+        fill="none"
+        stroke="#56ffb2"
+        stroke-width="8"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        filter="url(#glow)"
+    />
+
+    <g fill="#56ffb2">
+        <circle cx="770" cy="650" r="11"/>
+        <circle cx="850" cy="590" r="11"/>
+        <circle cx="930" cy="620" r="11"/>
+        <circle cx="1010" cy="500" r="11"/>
+        <circle cx="1090" cy="530" r="11"/>
+        <circle cx="1170" cy="390" r="11"/>
+        <circle cx="1250" cy="430" r="11"/>
+        <circle cx="1350" cy="260" r="11"/>
+    </g>
+
+    <!-- Text -->
+
+    <text
+        x="100"
+        y="235"
+        fill="#62d9ff"
+        font-family="Arial, sans-serif"
+        font-size="30"
+        font-weight="bold"
+        letter-spacing="8"
+    >
+        A-LEVEL COMPUTER SCIENCE NEA
+    </text>
+
+    <text
+        x="100"
+        y="350"
+        fill="#ffffff"
+        font-family="Arial, sans-serif"
+        font-size="70"
+        font-weight="bold"
+    >
+        SPORTS PERFORMANCE
+    </text>
+
+    <text
+        x="100"
+        y="440"
+        fill="#ffffff"
+        font-family="Arial, sans-serif"
+        font-size="70"
+        font-weight="bold"
+    >
+        DATA ANALYSER
+    </text>
+
+    <rect
+        x="100"
+        y="515"
+        width="340"
+        height="76"
+        rx="38"
+        fill="none"
+        stroke="#62d9ff"
+        stroke-width="4"
+    />
+
+    <text
+        x="270"
+        y="565"
+        fill="#62d9ff"
+        font-family="Arial, sans-serif"
+        font-size="29"
+        font-weight="bold"
+        text-anchor="middle"
+        letter-spacing="5"
+    >
+        COMING SOON
+    </text>
+
+    <text
+        x="100"
+        y="680"
+        fill="#aab8d1"
+        font-family="Arial, sans-serif"
+        font-size="28"
+    >
+        Development in progress
+    </text>
+
+    <text
+        x="100"
+        y="730"
+        fill="#7183a6"
+        font-family="Arial, sans-serif"
+        font-size="24"
+    >
+        Football data • Ratings • Predictions • Visualisations
+    </text>
+</svg>
