@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta name="google-site-verification" content="oAuT0XofZQn-6XaGEzfidIHrSHCkRnV7qjeMmQtSF1s" />
+    <meta name="google-site-verification" content="oAuT0XofZQn-6XaGEzfidIHrSHCkRnV7qjeMmQtSF1s">
     <meta charset="UTF-8">
 
     <meta
@@ -12,70 +12,67 @@
 
     <meta
         name="description"
-        content="Akinlabi Otebolaku's portfolio featuring data analysis, software development and technology projects."
+        content="The personal portfolio of Akinlabi Otebolaku, showcasing data analysis, Python, software development, web development and technology projects."
     >
+
     <link
-    rel="canonical"
-    href="https://akinlabiotebolaku.github.io/Akin-Web-Portfolio/"
->
+        rel="canonical"
+        href="https://akinlabiotebolaku.github.io/Akin-Web-Portfolio/"
+    >
 
     <title>Akinlabi Otebolaku | Data Analysis and Software Development Portfolio</title>
 
     <link rel="stylesheet" href="css/style.css">
 
-<link
-    rel="icon"
-    type="image/svg+xml"
-    href="/Akin-Web-Portfolio/assets/myicon.svg?v=2"
->
-
+    <link
+        rel="icon"
+        type="image/svg+xml"
+        href="/Akin-Web-Portfolio/assets/myicon.svg?v=2"
+    >
 </head>
 
 <body>
 
-    <!-- Navigation bar -->
-
-    <header class="navbar">
-
-        <a href="#" class="logo">
+    <header class="navbar" id="top">
+        <a href="#top" class="logo" aria-label="Return to the top">
             Akinlabi Otebolaku
         </a>
 
-        <nav class="nav-links">
+        <nav
+            class="nav-links"
+            id="primary-navigation"
+            aria-label="Main navigation"
+        >
             <a href="#about">About</a>
             <a href="#projects">Main Projects</a>
             <a href="#experience">Experience</a>
             <a href="#skills">Skills</a>
-            <a href="#github">GitHub</a>
             <a href="#contact">Contact</a>
         </nav>
 
         <button
             class="menu-button"
             id="menu-button"
+            type="button"
             aria-label="Open navigation menu"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
         >
             <span></span>
             <span></span>
             <span></span>
         </button>
-
     </header>
-
 
     <main>
 
-        <!-- Hero section -->
-
-        <section class="hero">
-
+        <section class="hero" aria-labelledby="hero-title">
             <div class="hero-content">
-
                 <p class="hero-tag">
                     DATA • DEVELOPMENT • PROBLEM SOLVING
                 </p>
 
-                <h1>
+                <h1 id="hero-title">
                     Hi, I'm <span>Akinlabi Otebolaku.</span>
                 </h1>
 
@@ -90,38 +87,22 @@
                 </p>
 
                 <div class="hero-buttons">
-
-                    <a
-                        href="#projects"
-                        class="primary-button"
-                    >
+                    <a href="#projects" class="primary-button">
                         View my projects
                     </a>
 
-                    <a
-                        href="#contact"
-                        class="secondary-button"
-                    >
+                    <a href="#contact" class="secondary-button">
                         Contact me
                     </a>
-
                 </div>
-
             </div>
 
-
             <div class="hero-visual">
-
                 <div class="data-card">
-
                     <div class="card-top">
-                        <span class="status-dot"></span>
-
+                        <span class="status-dot" aria-hidden="true"></span>
                         <p>PROFILE STATUS</p>
-
-                        <span class="status-text">
-                            ACTIVE
-                        </span>
+                        <span class="status-text">ACTIVE</span>
                     </div>
 
                     <div class="card-name">
@@ -130,7 +111,6 @@
                     </div>
 
                     <div class="card-grid">
-
                         <div>
                             <p>FOCUS</p>
                             <strong>Data Analysis</strong>
@@ -142,45 +122,32 @@
                         </div>
 
                         <div>
-                            <p>PROJECTS</p>
-                            <strong>4</strong>
+                            <p>MAIN PROJECTS</p>
+                            <strong>3</strong>
                         </div>
 
                         <div>
                             <p>STATUS</p>
                             <strong>Building</strong>
                         </div>
-
                     </div>
 
-                    <div class="code-line">
-                        <span>&gt;</span>
-
-                        <p id="typing-text">
-                            initialising portfolio...
-                        </p>
+                    <div class="code-line" aria-live="polite">
+                        <span aria-hidden="true">&gt;</span>
+                        <p id="typing-text">initialising portfolio...</p>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- About section -->
-
-        <section class="about" id="about">
-
+        <section class="about page-section" id="about">
             <div class="section-heading">
                 <p>01 / ABOUT</p>
                 <h2>More than just code.</h2>
             </div>
 
             <div class="about-grid">
-
                 <div class="about-text">
-
                     <p>
                         I am a Year 13 student studying Mathematics,
                         Physics and Computer Science.
@@ -197,11 +164,9 @@
                         My current project is a Sports Performance Data
                         Analyser for my A-Level Computer Science NEA.
                     </p>
-
                 </div>
 
                 <div class="about-details">
-
                     <div>
                         <span>LOCATION</span>
                         <strong>United Kingdom</strong>
@@ -221,18 +186,11 @@
                         <span>CAREER GOAL</span>
                         <strong>Technology Degree Apprenticeship</strong>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-
-        <!-- Projects section -->
-
-        <section class="projects" id="projects">
-
+        <section class="projects page-section" id="projects">
             <div class="section-heading">
                 <p>02 / PROJECTS</p>
                 <h2>Things I have built.</h2>
@@ -240,29 +198,27 @@
 
             <div class="project-grid">
 
-                <!-- Sports Performance Data Analyser -->
+                <article class="project-card project-card--featured">
+                    <img
+                        src="assets/project_preview_pics/spda.svg"
+                        alt="Football performance analysis graphic marked coming soon"
+                        class="project-image"
+                    >
 
-                <article class="project-card featured-project">
+                    <div class="project-overlay"></div>
 
-                    <div class="project-number">
-                        01
-                    </div>
+                    <div class="project-number" aria-hidden="true">01</div>
 
                     <div class="project-content">
+                        <p class="project-type">IN DEVELOPMENT</p>
 
-                        <p class="project-type">
-                            FEATURED PROJECT
-                        </p>
-
-                        <h3>
-                            Sports Performance Data Analyser
-                        </h3>
+                        <h3>Sports Performance Data Analyser</h3>
 
                         <p class="project-description">
-                            My OCR Computer Science NEA: a Python application
-                            that imports football data, validates it and
-                            analyses player performance using position-specific
-                            ratings.
+                            My OCR Computer Science NEA: a Python desktop
+                            application that will import football data, validate
+                            it and analyse player performance using
+                            position-specific ratings.
                         </p>
 
                         <div class="project-tags">
@@ -272,63 +228,27 @@
                             <span>matplotlib</span>
                         </div>
 
+                        <span class="coming-soon-badge">
+                            Case study coming soon
+                        </span>
                     </div>
-
                 </article>
 
-
-                <!-- Sports Analyser Prototype -->
-
                 <article class="project-card">
+                    <img
+                        src="assets/project_preview_pics/cardiovascular_ai_app.png"
+                        alt="Preview of the Cardiovascular AI web application"
+                        class="project-image"
+                    >
 
-                    <div class="project-number">
-                        02
-                    </div>
+                    <div class="project-overlay"></div>
+
+                    <div class="project-number" aria-hidden="true">02</div>
 
                     <div class="project-content">
+                        <p class="project-type">AI PROTOTYPE</p>
 
-                        <p class="project-type">
-                            WEB APPLICATION
-                        </p>
-
-                        <h3>
-                            Sports Analyser Prototype
-                        </h3>
-
-                        <p class="project-description">
-                            A browser-based prototype that processes player
-                            data, calculates statistics and ranks players by
-                            performance.
-                        </p>
-
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Cardiovascular AI project -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        03
-                    </div>
-
-                    <div class="project-content">
-
-                        <p class="project-type">
-                            AI PROTOTYPE
-                        </p>
-
-                        <h3>
-                            Cardiovascular AI App
-                        </h3>
+                        <h3>Cardiovascular AI App</h3>
 
                         <p class="project-description">
                             A mobile-style web prototype demonstrating how
@@ -344,13 +264,12 @@
                         </div>
 
                         <div class="project-links">
-
                             <a
                                 href="https://akinlabiotebolaku.github.io/Medic-AI-Poster-Competition-/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                View live project
+                                View live project ↗
                             </a>
 
                             <a
@@ -358,77 +277,77 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
-                                GitHub
+                                GitHub ↗
                             </a>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="project-card">
+                    <img
+                        src="assets/project_preview_pics/data_analysis_portfolio.png"
+                        alt="Preview of a data analysis dashboard"
+                        class="project-image"
+                    >
+
+                    <div class="project-overlay"></div>
+
+                    <div class="project-number" aria-hidden="true">03</div>
+
+                    <div class="project-content">
+                        <p class="project-type">DATA ANALYSIS</p>
+
+                        <h3>Data Analysis Portfolio</h3>
+
+                        <p class="project-description">
+                            A collection of seven projects involving SQL,
+                            Excel, Power BI, data cleaning, dashboard creation
+                            and the presentation of business insights.
+                        </p>
+
+                        <div class="project-tags">
+                            <span>SQL</span>
+                            <span>Excel</span>
+                            <span>Power BI</span>
+                            <span>Data Visualisation</span>
                         </div>
 
+                        <div class="project-links">
+                            <a
+                                href="https://github.com/AkinlabiOtebolaku/Data-Analysis-Project"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                View projects ↗
+                            </a>
+
+                            <a
+                                href="https://github.com/AkinlabiOtebolaku/Data-Analysis-Project"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                GitHub ↗
+                            </a>
+                        </div>
                     </div>
+                                </article>
 
-                </article>
-<!-- Data Analysis Portfolio -->
+            </div>
 
-<article class="project-card">
-
-    <div class="project-number">
-        04
-    </div>
-
-    <div class="project-content">
-
-        <p class="project-type">
-            DATA ANALYSIS
-        </p>
-
-        <h3>
-            Data Analysis Portfolio
-        </h3>
-
-        <p class="project-description">
-            A collection of seven projects involving SQL, Excel,
-            Power BI, data cleaning, dashboard creation and the
-            presentation of business insights.
-        </p>
-
-        <div class="project-tags">
-            <span>SQL</span>
-            <span>Excel</span>
-            <span>Power BI</span>
-            <span>Data Visualisation</span>
-        </div>
-
-        <div class="project-links">
-
-            <a
-                href="https://github.com/AkinlabiOtebolaku/Data-Analysis-Project"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                View projects
-            </a>
-
-            <a
-                href="https://github.com/AkinlabiOtebolaku/Data-Analysis-Project"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                GitHub
-            </a>
-
-        </div>
-
-    </div>
-
-</article>
+            <div class="projects-footer">
+                <a
+                    href="https://github.com/AkinlabiOtebolaku"
+                    class="all-projects-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    View all repositories on GitHub ↗
+                </a>
             </div>
 
         </section>
 
-
-        <!-- Experience section -->
-
-        <section class="experience" id="experience">
-
+        <section class="experience page-section" id="experience">
             <div class="section-heading">
                 <p>03 / EXPERIENCE</p>
                 <h2>Where I have gained experience.</h2>
@@ -436,23 +355,14 @@
 
             <div class="experience-list">
 
-                <!-- Hyde Housing -->
-
                 <article class="experience-item">
-
                     <div class="experience-date">
                         <span>JULY 2026</span>
                     </div>
 
                     <div class="experience-content">
-
-                        <p class="experience-type">
-                            WORK EXPERIENCE
-                        </p>
-
-                        <h3>
-                            IT Work Experience — Hyde Housing
-                        </h3>
+                        <p class="experience-type">WORK EXPERIENCE</p>
+                        <h3>IT Work Experience — Hyde Housing</h3>
 
                         <p>
                             Worked alongside different areas of the IT
@@ -466,29 +376,17 @@
                             <span>Cloud Systems</span>
                             <span>Data Management</span>
                         </div>
-
                     </div>
-
                 </article>
 
-
-                <!-- InvestIN -->
-
                 <article class="experience-item">
-
                     <div class="experience-date">
                         <span>JULY 2026</span>
                     </div>
 
                     <div class="experience-content">
-
-                        <p class="experience-type">
-                            CAREER PROGRAMME
-                        </p>
-
-                        <h3>
-                            InvestIN Technology Programme
-                        </h3>
+                        <p class="experience-type">CAREER PROGRAMME</p>
+                        <h3>InvestIN Technology Programme</h3>
 
                         <p>
                             Took part in practical technology activities
@@ -502,29 +400,17 @@
                             <span>Teamwork</span>
                             <span>Problem-Solving</span>
                         </div>
-
                     </div>
-
                 </article>
 
-
-                <!-- Hagital -->
-
                 <article class="experience-item">
-
                     <div class="experience-date">
                         <span>2023</span>
                     </div>
 
                     <div class="experience-content">
-
-                        <p class="experience-type">
-                            DATA ANALYSIS
-                        </p>
-
-                        <h3>
-                            Hagital Data Analysis Course
-                        </h3>
+                        <p class="experience-type">DATA ANALYSIS</p>
+                        <h3>Hagital Data Analysis Course</h3>
 
                         <p>
                             Completed a three-month course covering data
@@ -538,29 +424,17 @@
                             <span>Power BI</span>
                             <span>Data Cleaning</span>
                         </div>
-
                     </div>
-
                 </article>
 
-
-                <!-- KPMG -->
-
                 <article class="experience-item">
-
                     <div class="experience-date">
                         <span>2023</span>
                     </div>
 
                     <div class="experience-content">
-
-                        <p class="experience-type">
-                            VIRTUAL EXPERIENCE
-                        </p>
-
-                        <h3>
-                            KPMG Data Analytics Job Simulation
-                        </h3>
+                        <p class="experience-type">VIRTUAL EXPERIENCE</p>
+                        <h3>KPMG Data Analytics Job Simulation</h3>
 
                         <p>
                             Completed a virtual job simulation involving data
@@ -573,20 +447,13 @@
                             <span>Visualisation</span>
                             <span>Communication</span>
                         </div>
-
                     </div>
-
                 </article>
 
             </div>
-
         </section>
 
-
-        <!-- Skills section -->
-
-        <section class="skills" id="skills">
-
+        <section class="skills page-section" id="skills">
             <div class="section-heading">
                 <p>04 / SKILLS</p>
                 <h2>Tools I use to build solutions.</h2>
@@ -595,11 +462,7 @@
             <div class="skills-grid">
 
                 <article class="skill-card">
-
-                    <p class="skill-number">
-                        01
-                    </p>
-
+                    <p class="skill-number">01</p>
                     <h3>Programming</h3>
 
                     <div class="skill-list">
@@ -609,16 +472,10 @@
                         <span>CSS</span>
                         <span>SQL</span>
                     </div>
-
                 </article>
 
-
                 <article class="skill-card">
-
-                    <p class="skill-number">
-                        02
-                    </p>
-
+                    <p class="skill-number">02</p>
                     <h3>Data Analysis</h3>
 
                     <div class="skill-list">
@@ -628,16 +485,10 @@
                         <span>Data Cleaning</span>
                         <span>Data Visualisation</span>
                     </div>
-
                 </article>
 
-
                 <article class="skill-card">
-
-                    <p class="skill-number">
-                        03
-                    </p>
-
+                    <p class="skill-number">03</p>
                     <h3>Development Tools</h3>
 
                     <div class="skill-list">
@@ -647,16 +498,10 @@
                         <span>matplotlib</span>
                         <span>Git</span>
                     </div>
-
                 </article>
 
-
                 <article class="skill-card">
-
-                    <p class="skill-number">
-                        04
-                    </p>
-
+                    <p class="skill-number">04</p>
                     <h3>Professional Skills</h3>
 
                     <div class="skill-list">
@@ -666,165 +511,69 @@
                         <span>Presentation</span>
                         <span>Attention to Detail</span>
                     </div>
-
                 </article>
 
             </div>
-
         </section>
 
 
-        <!-- GitHub section -->
-
-        <section class="github-section" id="github">
-
-            <div class="section-heading">
-                <p>05 / GITHUB</p>
-                <h2>My latest code.</h2>
-            </div>
-
-            <div class="github-header">
-
-                <div>
-                    <p class="github-description">
-                        This section displays selected public GitHub
-                        repositories that demonstrate my strongest work.
-                    </p>
-                </div>
-
-                <a
-                    href="https://github.com/AkinlabiOtebolaku"
-                    class="github-profile-link"
-                    id="github-profile-link"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    View GitHub profile ↗
-                </a>
-
-            </div>
-
-            <div class="github-grid" id="github-grid">
-
-                <div class="github-loading">
-                    <span class="loading-dot"></span>
-
-                    <p>
-                        Connecting to GitHub...
-                    </p>
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- Contact section -->
-
-        <section class="contact" id="contact">
-
+        <section class="contact page-section" id="contact">
             <div class="contact-card">
-
                 <div class="contact-heading">
-
-                    <p>06 / CONTACT</p>
-
-                    <h2>
-                        Let’s build something useful.
-                    </h2>
+                    <p>05 / CONTACT</p>
+                    <h2>Let’s build something useful.</h2>
 
                     <p class="contact-description">
                         I am currently developing my skills through projects,
                         work experience and my Computer Science NEA. Feel free
                         to explore my work or connect with me online.
                     </p>
-
                 </div>
 
                 <div class="contact-links">
+                    <a
+                        href="mailto:akinlabi.ote@gmail.com"
+                        class="contact-button"
+                    >
+                        Email me
+                    </a>
 
-    <a
-        href="mailto:akinlabi.ote@gmail.com"
-        class="contact-button"
-    >
-        Email me
-    </a>
+                    <a
+                        href="https://www.linkedin.com/in/akinlabi-otebolaku-a85904334"
+                        class="contact-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        LinkedIn
+                    </a>
 
-    <a
-        href="https://www.linkedin.com/in/akinlabi-otebolaku-a85904334"
-        class="contact-button"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        LinkedIn
-    </a>
-
-    <a
-        href="https://github.com/AkinlabiOtebolaku"
-        class="contact-button"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        GitHub
-    </a>
-
-</div><div class="contact-links">
-
-    <a
-        href="mailto:akinlabi.ote@gmail.com"
-        class="contact-button"
-    >
-        Email me
-    </a>
-
-    <a
-        href="https://www.linkedin.com/in/akinlabi-otebolaku-a85904334"
-        class="contact-button"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        LinkedIn
-    </a>
-
-    <a
-        href="https://github.com/AkinlabiOtebolaku"
-        class="contact-button"
-        target="_blank"
-        rel="noopener noreferrer"
-    >
-        GitHub
-    </a>
-
-</div>
-
+                    <a
+                        href="https://github.com/AkinlabiOtebolaku"
+                        class="contact-button"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </div>
             </div>
-
         </section>
 
     </main>
 
-
-    <!-- Footer -->
-
     <footer class="footer">
-
-        <a href="#" class="footer-logo">
+        <a href="#top" class="footer-logo">
             Akinlabi Otebolaku
         </a>
 
-        <p>
-            Designed and built by Akinlabi Otebolaku.
-        </p>
+        <p>Designed and built by Akinlabi Otebolaku.</p>
 
-        <a href="#" class="back-to-top">
+        <a href="#top" class="back-to-top">
             Back to top ↑
         </a>
-
     </footer>
 
-
     <script src="js/script.js"></script>
-
 </body>
 
 </html>
