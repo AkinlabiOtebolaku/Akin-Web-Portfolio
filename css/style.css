@@ -1989,3 +1989,22 @@ body::after {
         transform: none;
     }
 }
+
+
+/* Experience lists and keyboard navigation */
+.experience-bullets {
+    padding-left: 1.2rem;
+    color: var(--text-soft);
+    line-height: 1.8;
+}
+.experience-bullets li + li { margin-top: 0.6rem; }
+.experience-bullets li::marker { color: var(--accent); }
+a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 5px;
+}
+.card-grid strong { overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+    .nav-links:not(.open) { visibility: hidden; }
+    .nav-links.open { visibility: visible; }
+}

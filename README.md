@@ -1,6 +1,6 @@
 # Akinlabi Otebolaku — Portfolio Website
 
-My personal portfolio website showcasing my experience, technical skills and projects in data analysis, software development and web development.
+My personal portfolio website showcasing my experience, technical skills and projects in software development, data analysis and engineering. Seeking a degree apprenticeship for 2027.
 
 ## Live Website
 
@@ -11,14 +11,12 @@ My personal portfolio website showcasing my experience, technical skills and pro
 - Sports Performance Data Analyser
 - Data Analysis Portfolio
 - Cardiovascular AI Prototype
-- Sports Analyser Web Prototype
 
 ## Technologies Used
 
 - HTML
 - CSS
 - JavaScript
-- GitHub REST API
 - GitHub Pages
 
 ## Main Features
@@ -27,8 +25,8 @@ My personal portfolio website showcasing my experience, technical skills and pro
 - Animated hero and project sections
 - Experience timeline
 - Skills dashboard
-- Selected GitHub repository integration
-- Contact links
+- Links to selected GitHub repositories
+- Contact links and requests for software/IT or engineering/general CVs
 - Live deployment through GitHub Pages
 
 ## Updating the Website
@@ -45,3 +43,4 @@ The website is edited locally and managed using GitHub Desktop.
 
 - [LinkedIn](https://www.linkedin.com/in/akinlabi-otebolaku-a85904334)
 - [GitHub](https://github.com/AkinlabiOtebolaku)
+
