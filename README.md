@@ -26,7 +26,7 @@ My personal portfolio website showcasing my experience, technical skills and pro
 - Experience timeline
 - Skills dashboard
 - Links to selected GitHub repositories
-- Contact links and requests for software/IT or engineering/general CVs
+- Email, LinkedIn and GitHub contact links
 - Live deployment through GitHub Pages
 
 ## Updating the Website
